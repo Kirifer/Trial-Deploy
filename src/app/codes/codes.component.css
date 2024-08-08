@@ -1,0 +1,28 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .button-add{
+    margin-bottom: 25px;
+    float: right;
+  }
+
+  mat-form-field{
+    width: 100%;
+  }
+
+ .space{
+  margin-top: 100px;
+ }
+ .main-title {
+  display: flex;
+  justify-content: space-between;
+} 
+.delete-btn{
+  color: rgb(160, 0, 0);
+}
+.edit-btn{
+  color: #000000;
+}
+.font-size{
+  font-size: 50px;
+}

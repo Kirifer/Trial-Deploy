@@ -1,0 +1,12 @@
+<div class="body" [ngClass]="{'body': !isAdminLogin, 'disabled-body': isAdminLogin}">
+  <div *ngIf="!isAdminLogin">
+    <app-side-nav (onToggleSideNav)="onToggleSideNav($event)"></app-side-nav>
+    <app-body [collapsed]="isSideNavCollapsed" [screenWidth]="screenWidth"></app-body>
+    <!-- <router-outlet></router-outlet> -->
+  </div>
+  <div *ngIf = "isAdminLogin">
+    <app-login-register></app-login-register>
+  </div>
+  
+
+</div>
